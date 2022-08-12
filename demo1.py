@@ -1,6 +1,3 @@
-"""
-使用HAI SDK运行流，默认配置，可见光目标检测和跟踪
-"""
 import HAI
 
 uaii = xai.UAII(is_center=True)
