@@ -1,11 +1,11 @@
 import os, sys
 from pathlib import Path
 
-pydir = Path(os.path.abspath(__file__)).parent  # 获取当前__init__.py文件所在目录
-
 from HAI import MODULES, SCRIPTS, IOS  # 算法模块的三个大类
 from HAI import Config as PyConfigLoader  # 用于加载算法模块的配置文件
 from HAI import AbstractOutput, AbstractModule, AbstractInput  # 抽象类
+
+pydir = Path(os.path.abspath(__file__)).parent  # 获取当前py文件所在目录
 
 
 @MODULES.register_module(name='seyolov5')  # 使用装饰器注册模块，将名称为seyolov5的模块注册到MODULES中
